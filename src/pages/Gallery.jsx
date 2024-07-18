@@ -14,7 +14,7 @@ const Gallery = () => {
     const fetchPhotos = async () => {
       setLoading(true);
       try {
-        const res = await axios.get("https://thtsusa.com/api/images", {
+        const res = await axios.get("http://thtsindia.com/api/images", {
           headers: { "Content-Type": "application/json" },
         });
         setPhotos(res.data);
