@@ -11,7 +11,7 @@ export default function ImageDetails() {
     useEffect(() => {
         const fetchPhotos = async () => {
             try {
-                const res = await axios.get(`https://thtsusa.com/api/images/${id}`, {
+                const res = await axios.get(`http://thtsindia.com/api/images/${id}`, {
                     headers: { "Content-Type": "application/json" },
                 });
                 setPhotos(res.data);
